@@ -1,5 +1,3 @@
-from tkinter import *
-from tkinter import ttk
 import random
 import sys
 
@@ -25,17 +23,4 @@ def str_to_class(str):
 def getPool():
     return str_to_class('responses'+poolManifest[getRng("typ")])
 
-# debugging step; print random response 
 print(getPool()[getRng("ans")])
-
-# root = Tk()
-
-# frm = ttk.Frame(root, padding=10)
-# frm.grid()
-
-
-# ttk.Label(frm, textvariable=getPool()[getRng("ans")]).grid(column=0, row=0)
-# ttk.Button(frm, text="Roll",).grid(column=0, row=1)
-
-
-# root.mainloop()
